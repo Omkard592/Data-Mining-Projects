@@ -1,1 +1,124 @@
+Run using following command:
+python OMKAR_DESHMUKH_DM_PA1.py
 
+##############################################################################
+Test cases (paste at the end of the code)
+
+print("(%s, %.12f)" % query("health insurance wall street"))
+#(2012-10-03.txt, 0.033877975254)
+print("(%s, %.12f)" % query("security conference ambassador"))
+#(fetch more, 0.000000000000)
+print("(%s, %.12f)" % query("particular constitutional amendment"))
+#(fetch more, 0.000000000000)
+print("(%s, %.12f)" % query("terror attack"))
+#(2004-09-30.txt, 0.026893338131)
+print("(%s, %.12f)" % query("vector entropy"))
+#(None, 0.000000000000)
+
+
+
+print("(%s, %.12f)" % query("Carter-Ford Presidential Debate"))
+#(fetch more, 0.000000000000)
+print("(%s, %.12f)" % query("terror attacks by religion"))
+#(fetch more, 0.000000000000)
+print("(%s, %.12f)" % query("terror attacks Aniket"))
+#(2004-09-30.txt, 0.021958318634)
+print("(%s, %.12f)" % query("terror attacks Ani_8ket"))
+#(2004-09-30.txt, 0.019016461761)
+print("(%s, %.12f)" % query("some more terror attack"))
+#(2004-09-30.txt, 0.026893338131)
+
+print("(%s, %.12f)" % query("Governor Dukakis"))
+#(1988-10-13.txt, 0.068798757875)
+print("(%s, %.12f)" % query("homeland security bill"))
+#(fetch more, 0.000000000000)
+print("(%s, %.12f)" % query("83 Social Security commission"))
+#(fetch more, 0.000000000000)
+print("(%s, %.12f)" % query("this economic crisis"))
+#(fetch more, 0.000000000000)
+print("(%s, %.12f)" % query("the Cold War"))
+#(fetch more, 0.000000000000)
+
+print("(%s, %.12f)" % query("brass tacks"))
+#(fetch more, 0.000000000000)
+print("(%s, %.12f)" % query("fair competition from American business"))
+#(fetch more, 0.000000000000)
+print("(%s, %.12f)" % query("struggling to find a job"))
+#(fetch more, 0.000000000000)
+print("(%s, %.12f)" % query("Detroit bankrupt"))
+#(2012-10-16.txt, 0.048607834928)
+print("(%s, %.12f)" % query("intervened militarily"))
+#(1960-10-21.txt, 0.040023599800)
+
+
+print("(%s, %.12f)" % query("abbreviated"))
+#(None, 0.000000000000)
+print("(%s, %.12f)" % query("civilian segment"))
+#(2012-10-22.txt, 0.045016712677)
+print("(%s, %.12f)" % query("yemen whopper testament world"))
+#(fetch more, 0.000000000000)
+print("(%s, %.12f)" % query("audacious magnanimity panegyric"))
+#(None, 0.000000000000)
+print("(%s, %.12f)" % query("8_3 93"))
+#(None, 0.000000000000)
+
+
+
+print("%.12f" % getweight("2012-10-03.txt","health"))
+#0.008528366190
+print("%.12f" % getweight("1960-10-21.txt","reason"))
+#0.000000000000
+print("%.12f" % getweight("1976-10-22.txt","agenda"))
+#0.012683891289
+print("%.12f" % getweight("2012-10-16.txt","hispan"))
+#0.023489163449
+print("%.12f" % getweight("2012-10-16.txt","hispanic"))
+#0.000000000000
+
+print("%.12f" % getweight('1960-09-26.txt','accomplish'))
+#0.012765709568
+print("%.12f" % getweight('1960-10-07.txt','andropov'))
+#0.000000000000
+print("%.12f" % getweight('1960-10-13.txt','identifi'))
+#0.013381177224
+print("%.12f" % getweight('1976-10-22.txt','institut'))
+#0.006927937352
+print("%.12f" % getweight('1996-10-16.txt','latvia'))
+#0.000000000000
+
+print("%.12f" % getweight('2000-10-11.txt','legitimaci'))
+#0.032731539039
+print("%.12f" % getweight('2004-10-08.txt','meantim'))
+#0.000000000000
+print("%.12f" % getweight('2004-10-08.txt','87'))
+#0.000000000000
+print("%.12f" % getweight('2004-10-13.txt','th'))
+#0.003098041914
+print("%.12f" % getweight('2008-10-07.txt','turn'))
+#0.000888191878
+
+
+
+
+
+
+print("%.12f" % getidf("health"))
+#0.079181246048
+print("%.12f" % getidf("agenda"))
+#0.363177902413
+print("%.12f" % getidf("vector"))
+#-1.000000000000
+print("%.12f" % getidf("reason"))
+#0.000000000000
+print("%.12f" % getidf("hispan"))
+#0.632023214705
+print("%.12f" % getidf("hispanic"))
+#-1.000000000000
+print("%.12f" % getidf('no8thing'))
+#-1.000000000000
+print("%.12f" % getidf('andropov'))
+#1.477121254720
+print("%.12f" % getidf('identifi'))
+#0.330993219041
+print("%.12f" % getidf('998'))
+#-1.000000000000
